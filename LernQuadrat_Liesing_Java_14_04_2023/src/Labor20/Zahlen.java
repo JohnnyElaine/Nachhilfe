@@ -167,12 +167,36 @@ public class Zahlen {
         return min + ran.nextInt(max - min);
     }
 
+    /**
+     * Bubble Sort ohne boolean variable
+     * Algorithmus läuft weiter obwohl
+     */
     public void bubblesort() {
         int end = anz - 1;
         for (int i = 0; i < anz; i++) {
             for (int j = 0; j < end; j++) {
                 if (zahlen[j] > zahlen[j + 1]) {
                     swap(j, j + 1);
+                }
+            }
+            end--;
+        }
+    }
+
+    /**
+     * bubble sort mut boolean variable
+     * Algorithmus hört auf wenn das Array sortiert ist
+     */
+    public void bubblesortOptimiert() {
+        int end = anz - 1;
+        boolean isSorted = false;
+
+        while (!isSorted) {
+            isSorted = true;
+            for (int j = 0; j < end; j++) {
+                if (zahlen[j] > zahlen[j + 1]) {
+                    swap(j, j + 1);
+                    isSorted = false; // Wenn vertauscht werden muss, kann das array noch nicht sortiert sein.
                 }
             }
             end--;
@@ -220,7 +244,6 @@ public class Zahlen {
 
         System.out.println("Test Zahlen(int anz) sortiert: ");
         Zahlen z2 = new Zahlen(15);
-        z2.bubblesort();
         z2.ausgeben(100);
 
         System.out.println();
@@ -252,6 +275,25 @@ public class Zahlen {
         System.out.printf("unsortiert: %s%n", z6);
         z6.shakerSort();
         System.out.printf("Nach shakersort(): %s%n", z6);
+
+        System.out.println();
+
+        System.out.println("Test bubbleSort()");
+        Zahlen z7 = new Zahlen(new int[]{5,6,3,2,555,1,123,1,9,8,25,76,998});
+        System.out.printf("unsortiert: %s%n", z7);
+        z7.bubblesort();
+        System.out.printf("Nach bubbleSort(): %s%n", z7);
+
+        System.out.println();
+
+        System.out.println("Test bubbleSortOptimiert()");
+        Zahlen z8 = new Zahlen(new int[]{5,6,3,2,555,1,123,1,9,8,25,76,998});
+        System.out.printf("unsortiert: %s%n", z8);
+        z8.bubblesortOptimiert();
+        System.out.printf("Nach bubblesortOptimiert(): %s%n", z8);
+
+
+        System.out.println();
     }
 
 }

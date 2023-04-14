@@ -1,0 +1,26 @@
+Bubblesort tutorial:
+https://www.youtube.com/watch?v=xli_FI7CuzA
+https://www.youtube.com/watch?v=m4pw9KoT2A4
+
+ShakerSort tutorial:
+https://www.youtube.com/watch?v=lxwMZvwKmMs
+
+Java Klassen Basics:
+https://www.youtube.com/watch?v=IUqKuGNasdM
+https://www.youtube.com/watch?v=8yjkWGRlUmY
+https://www.youtube.com/watch?v=4dqlSk_RPmI
+
+Java Datentypen:
+https://www.youtube.com/watch?v=WQ7mvQFSmYc
+https://www.javatpoint.com/java-data-types
+
+Java Stringbuilder:
+https://www.youtube.com/watch?v=OU1AA0T4PvQ
+
+Online Übungen -  Erst machen wenn du den Stoff gut kannst und mehr allgemeine Programmierübung brauchst:
+https://adventofcode.com/
+https://leetcode.com/
+
+Komplette gratis Java Kurse:
+https://www.udemy.com/course/java-tutorial/
+https://java-programming.mooc.fi/
