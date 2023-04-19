@@ -78,6 +78,7 @@ namespace Overview
         /*
          * Getter & Setter nur verwenden wenn notwendig
          * 
+         * */
         public double X
         {
             get { return _x; }
@@ -95,6 +96,6 @@ namespace Overview
             get { return _z; }
             set { _z = value; }
         }
-        */
+        
     }
 }
