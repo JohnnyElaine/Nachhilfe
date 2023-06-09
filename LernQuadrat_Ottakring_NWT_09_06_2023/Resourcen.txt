@@ -1,0 +1,7 @@
+Gratis Online NWT Basics:
+
+https://subnettingpractice.com/
+
+DHCP:
+
+https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol#:~:text=DHCP%20operations%20fall%20into%20four,with%20clients%20broadcasting%20a%20request.
