@@ -1,0 +1,41 @@
+Router0:
+
+en
+conf t
+!
+hostname Router0
+!
+interface gig0/0
+ip address 10.10.10.129 255.255.255.248
+no shut
+exit
+interface gig0/1
+ip address 10.20.20.1 255.255.255.0
+ip helper-address 10.40.40.10
+no shut
+exit
+!
+ip route 0.0.0.0 0.0.0.0 10.10.10.130
+!
+end
+
+!-------------------------------------
+
+Router1:
+en
+conf t
+!
+hostname Router1
+!
+interface gig0/0
+ip address 10.10.10.130 255.255.255.248
+no shut
+exit
+interface gig0/1
+ip address 10.40.40.1 255.255.255.0
+no shut
+exit
+!
+ip route 0.0.0.0 0.0.0.0 10.10.10.129
+!
+end
