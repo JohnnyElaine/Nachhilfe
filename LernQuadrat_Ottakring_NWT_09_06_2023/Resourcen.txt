@@ -1,7 +1,24 @@
 Gratis Online NWT Basics:
 
-https://subnettingpractice.com/
+https://subnettingpractice.com/ (sehr gut um IP-Addressen und Subnet Masks zu verstehen)
 
-DHCP:
 
-https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol#:~:text=DHCP%20operations%20fall%20into%20four,with%20clients%20broadcasting%20a%20request.
+VLANs Theorie:
+https://www.youtube.com/watch?v=_PPaArOxHhw
+https://www.youtube.com/watch?v=jC6MJTh9fRE
+https://www.youtube.com/watch?v=ck3gx9HB9-k (broadcast domain)
+
+
+VLANS Konfig:
+https://www.youtube.com/watch?v=aBOzFa6ioLw&list=PLndqfxA_9SWFvDrh7e_5gmn7oNTcgPK23&pp=iAQB
+(dancourses macht allgemein sehr gute anfänger videos)
+
+DHCP Theorie:
+https://www.youtube.com/watch?v=6sxnDB32L1s
+
+DHCP config:
+https://www.youtube.com/watch?v=zrBTDLx2Mpk (relay agent / ip-helper)
+https://www.youtube.com/watch?v=dtzOPWtU75w (router als dhcp server)
+
+DNS:
+https://www.youtube.com/watch?v=uOfonONtIuk
