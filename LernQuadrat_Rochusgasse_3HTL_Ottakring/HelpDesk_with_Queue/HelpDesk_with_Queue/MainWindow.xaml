@@ -1,0 +1,92 @@
+﻿<Window x:Class="HelpDesk_with_Queue.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelpDesk_with_Queue"
+        mc:Ignorable="d"
+        Title="HelpDeskGUI" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="User GUI">
+                <Grid >
+                    <Grid.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="SkyBlue" Offset="1"/>
+                            <GradientStop Color="PaleGoldenrod" Offset="0"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="10" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    
+                    <Label x:Name="userLbName" Grid.Row="1" Grid.Column="0" Content="Name:" Margin="0,0,0,10"/>
+                    <TextBox x:Name="userTbName" Grid.Row="1" Grid.Column="1" Margin="0,0,0,10"/>
+                    <Label x:Name="userLbDate" Grid.Row="2" Grid.Column="0" Content="Date:" Margin="0,0,0,10"/>
+                    <DatePicker x:Name="userDpDate" Grid.Row="2" Grid.Column="1" Margin="0,0,0,10"/>
+                    <Label x:Name="userLbRequest" Grid.Row="3" Grid.Column="0" Content="Request:" Margin="0,0,0,10"/>
+                    <TextBox x:Name="userTbRequest" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" AcceptsReturn="True" TextWrapping="Wrap" Margin="0,0,0,10"/>
+
+                    <Button x:Name="userBtnSend" Grid.Row="4" Grid.Column="2" Content="Send" HorizontalAlignment="Right" Padding="8,3,8,3" Click="userBtnSend_Click"/>
+
+                    <Label x:Name="userLbSendConfirmation" Grid.Row="5" Grid.Column="1" Content="" Foreground="Red"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Support GUI">
+                <Grid >
+                    <Grid.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="PaleGoldenrod" Offset="1"/>
+                            <GradientStop Color="SkyBlue" Offset="0"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="10" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label x:Name="supportLbName" Grid.Row="1" Grid.Column="0" Content="Name:" Margin="0,0,0,10"/>
+                    <TextBox x:Name="supportTbName" Grid.Row="1" Grid.Column="1" IsReadOnly="True" Background="#80D3D3D3" Foreground="#444444" Margin="0,0,0,10"/>
+                    <Label x:Name="supportLbDate" Grid.Row="2" Grid.Column="0" Content="Date:" Margin="0,0,0,10"/>
+                    
+                    <TextBox x:Name="supportTbDate" Grid.Row="2" Grid.Column="1" IsReadOnly="True" Background="#80D3D3D3" Foreground="#444444" Margin="0,0,0,10"/>
+                    <Label x:Name="supportLbRequest" Grid.Row="3" Grid.Column="0" Content="Request:" Margin="0,0,0,10"/>
+                    <TextBox x:Name="supportTbRequest" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" AcceptsReturn="True" TextWrapping="Wrap" Margin="0,0,0,10"/>
+
+                    <StackPanel Grid.Row="4" Grid.Column="2" Orientation="Horizontal"  HorizontalAlignment="Right">
+                        <Button x:Name="supportBtnGetNextRequest" Content="Get next request" Margin="0,0,10,0" Padding="8,3,8,3" Click="supportBtnGetNextRequest_Click"/>
+                        <Button x:Name="supportBtnSendAgain" Content="Send again"  Padding="3" Click="supportBtnSendAgain_Click"/>
+                    </StackPanel>
+
+                    <Label Grid.Row="5" Grid.Column="1" Content="" Foreground="Red"/>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
