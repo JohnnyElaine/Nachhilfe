@@ -21,6 +21,7 @@ namespace HelpDesk_with_Queue
     /// </summary>
     public partial class MainWindow : Window
     {
+        private const string CSV_PATH = @"..\..\..\Resources\data.csv";
 
         private Queue<HelpRequest> helpRequestQueue;
         private HelpRequest currentSupportRequest;
@@ -30,11 +31,18 @@ namespace HelpDesk_with_Queue
             InitializeComponent();
             
             InitUI();
+            InitClassVariables();
         }
 
-        private void initClassVariables()
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            helpRequestQueue = new Queue<HelpRequest>();
+            DataManager.WriteAllRequests(helpRequestQueue, CSV_PATH);
+        }
+
+        private void InitClassVariables()
+        {
+            // Load from CSV File on startup
+            helpRequestQueue = DataManager.ReadAllRequests(CSV_PATH);
             currentSupportRequest = new HelpRequest(string.Empty, string.Empty, new DateTime());
         }
 
@@ -46,6 +54,8 @@ namespace HelpDesk_with_Queue
         private void userBtnSend_Click(object sender, RoutedEventArgs e)
         {
             DateTime dt = (DateTime) userDpDate.SelectedDate;
+            string s = userTbName.Text;
+            string ss = userTbName.Text;
             helpRequestQueue.Enqueue(new HelpRequest(userTbName.Text, userTbRequest.Text, dt));
 
             userLbSendConfirmation.Content = "Request is sent to support";
@@ -53,6 +63,8 @@ namespace HelpDesk_with_Queue
 
         private void supportBtnGetNextRequest_Click(object sender, RoutedEventArgs e)
         {
+            if (helpRequestQueue.Count <= 0) return;
+            
             currentSupportRequest = helpRequestQueue.Dequeue();
 
             supportTbName.Text = currentSupportRequest.name;
@@ -64,5 +76,7 @@ namespace HelpDesk_with_Queue
         {
             helpRequestQueue.Enqueue(new HelpRequest(currentSupportRequest.name, supportTbRequest.Text, currentSupportRequest.date));
         }
+
+
     }
 }

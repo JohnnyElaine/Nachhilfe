@@ -2,6 +2,7 @@
 {
     public class HelpRequest
     {
+        private const char DELIMITER = ';';
         public string name { get;}
         public string request { get; }
         public DateTime date { get; }
@@ -15,6 +16,9 @@
             this.date = date;
         }
 
-
+        public override string ToString()
+        {
+            return String.Format("{0}{1}{2}{3}{4}", name, DELIMITER, request, DELIMITER, date.ToString());
+        }
     }
 }
