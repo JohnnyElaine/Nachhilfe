@@ -1,0 +1,368 @@
+--- Step 1 -------------------------------------
+6
+
+--- Step 2 -------------------------------------
+9
+
+--- Step 3 -------------------------------------
+21
+Thriller
+Born In The U.S.A.
+Jagged Little Pill
+All The Right Reasons
+Whitney Houston
+
+--- Step 4 -------------------------------------
+11: Whitney Houston (Whitney Houston, 10 songs)
+3: Thriller (Michael Jackson, 9 songs)
+2: The Sound of Music (Soundtrack, 16 songs)
+
+Born In The U.S.A.
+Ropin' The Wind
+Jagged Little Pill
+Doctor Zhivago
+All The Right Reasons
+Tapestry
+Whitney Houston
+The Fame
+
+--- Step 5 -------------------------------------
+Born in the U.S.A.
+Cover Me
+Downbound Train
+I'm on Fire
+I'm Goin' Down
+Glory Days
+Dancing in the Dark
+My Hometown
+
+--- Step 6 -------------------------------------
+3,341667
+
+2,654452
+
+--- Step 7 -------------------------------------
+1965
+2000
+
+--- Step 8 -------------------------------------
+Don't You Remember
+He Won't Go
+I'll Be Waiting
+Lovesong
+One and Only
+Rolling in the Deep
+Rumour Has It
+Set Fire to the Rain
+Take It All
+Turning Tables
+Breathe
+Change
+Fearless
+Fifteen
+Forever & Always
+Hey Stephen
+Love Story
+Our Song
+Should've Said No
+Teardrops on My Guitar
+Tell Me Why
+The Best Day
+The Way I Loved You
+White Horse
+You Belong With Me
+You're Not Sorry
+Beautiful, Dirty, Rich
+Boys Boys Boys
+Brown Eyes
+Eh, Eh (Nothing Else I Can Say)
+I Like It Rough
+Just Dance
+LoveGame
+Money Honey
+Paparazzi
+Paper Gangsta
+Poker Face
+Starstruck
+Summerboy
+The Fame
+Animals
+Far Away
+Fight for All the Wrong Reasons
+Follow You Home
+If Everyone Cared
+Next Contestant
+Photograph
+Rockstar
+Savin' Me
+Side of a Bullet
+Someday (acoustic live)
+Someone That You're With
+We Will Rock You
+Climb Ev'ry Mountain
+Climb Ev'ry Mountain (reprise)
+Do-Re-Mi
+Edelweiss (reprise)
+I Have Confidence
+Maria
+Morning Hymn / Alleluia
+My Favorite Things
+Overture / Preludium (Dixit Dominus)
+Processional and Maria
+Sixteen Going on Seventeen
+So Long, Farewell
+The Lonely Goatherd
+The Sound of Music
+All I Really Want
+Forgiven
+Hand in My Pocket
+Head Over Feet
+Ironic
+Mary Jane
+Not the Doctor
+Perfect
+Right Through You
+Wake Up / Your House
+You Learn
+You Oughta Know
+Against the Grain
+Burning Bridges
+Cold Shoulder
+In Lonesome Dove
+Papa Loved Mama
+Rodeo
+Shameless
+The River
+We Bury the Hatchet
+What She's Doing Now
+(You Make Me Feel Like) A Natural Woman
+Beautiful
+Home Again
+I Feel the Earth Move
+It's Too Late
+Smackwater Jack
+So Far Away
+Tapestry
+Way Over Yonder
+Where You Lead
+Will You Love Me Tomorrow?
+You've Got a Friend
+All at Once
+Greatest Love of All
+Hold Me
+How Will I Know
+Nobody Loves Me Like You Do
+Saving All My Love for You
+Someone for Me
+Take Good Care of My Heart
+Thinking About You
+You Give Good Love
+Bobby Jean
+Born in the U.S.A.
+Cover Me
+Dancing in the Dark
+Darlington County
+Downbound Train
+Glory Days
+I'm Goin' Down
+I'm on Fire
+My Hometown
+No Surrender
+Working on the Highway
+Baby Be Mine
+Beat It
+Billie Jean
+Human Nature
+P.Y.T. (Pretty Young Thing)
+The Girl Is Mine
+The Lady in My Life
+Thriller
+Wanna Be Startin' Somethin'
+At the Student Cafe
+Komarovsky and Lara's Rendezvous
+Lara Leaves Yuri
+Lara's Theme From "Doctor Zhivago"
+Main Title From "Doctor Zhivago"
+Overture From "Doctor Zhivago"
+Prelude / The Sound of Music
+Revolution
+Something Good
+Sventytski's Waltz
+The Funeral
+Tonya Arrives at Varykino
+Yuri Escapes
+Yuri Writes a Poem for Lara
+
+{ Year = 2011, Title = Don't You Remember }
+{ Year = 2011, Title = He Won't Go }
+{ Year = 2011, Title = I'll Be Waiting }
+{ Year = 2011, Title = Lovesong }
+{ Year = 2011, Title = One and Only }
+{ Year = 2011, Title = Rolling in the Deep }
+{ Year = 2011, Title = Rumour Has It }
+{ Year = 2011, Title = Set Fire to the Rain }
+{ Year = 2011, Title = Take It All }
+{ Year = 2011, Title = Turning Tables }
+{ Year = 2009, Title = Breathe }
+{ Year = 2009, Title = Change }
+{ Year = 2009, Title = Fearless }
+{ Year = 2009, Title = Fifteen }
+{ Year = 2009, Title = Forever & Always }
+{ Year = 2009, Title = Hey Stephen }
+{ Year = 2009, Title = Love Story }
+{ Year = 2009, Title = Our Song }
+{ Year = 2009, Title = Should've Said No }
+{ Year = 2009, Title = Teardrops on My Guitar }
+{ Year = 2009, Title = Tell Me Why }
+{ Year = 2009, Title = The Best Day }
+{ Year = 2009, Title = The Way I Loved You }
+{ Year = 2009, Title = White Horse }
+{ Year = 2009, Title = You Belong With Me }
+{ Year = 2009, Title = You're Not Sorry }
+{ Year = 2008, Title = Beautiful, Dirty, Rich }
+{ Year = 2008, Title = Boys Boys Boys }
+{ Year = 2008, Title = Brown Eyes }
+{ Year = 2008, Title = Eh, Eh (Nothing Else I Can Say) }
+{ Year = 2008, Title = I Like It Rough }
+{ Year = 2008, Title = Just Dance }
+{ Year = 2008, Title = LoveGame }
+{ Year = 2008, Title = Money Honey }
+{ Year = 2008, Title = Paparazzi }
+{ Year = 2008, Title = Paper Gangsta }
+{ Year = 2008, Title = Poker Face }
+{ Year = 2008, Title = Starstruck }
+{ Year = 2008, Title = Summerboy }
+{ Year = 2008, Title = The Fame }
+{ Year = 2005, Title = Animals }
+{ Year = 2005, Title = Far Away }
+{ Year = 2005, Title = Fight for All the Wrong Reasons }
+{ Year = 2005, Title = Follow You Home }
+{ Year = 2005, Title = If Everyone Cared }
+{ Year = 2005, Title = Next Contestant }
+{ Year = 2005, Title = Photograph }
+{ Year = 2005, Title = Rockstar }
+{ Year = 2005, Title = Savin' Me }
+{ Year = 2005, Title = Side of a Bullet }
+{ Year = 2005, Title = Someday (acoustic live) }
+{ Year = 2005, Title = Someone That You're With }
+{ Year = 2005, Title = We Will Rock You }
+{ Year = 2000, Title = Climb Ev'ry Mountain }
+{ Year = 2000, Title = Climb Ev'ry Mountain (reprise) }
+{ Year = 2000, Title = Do-Re-Mi }
+{ Year = 2000, Title = Edelweiss (reprise) }
+{ Year = 2000, Title = I Have Confidence }
+{ Year = 2000, Title = Maria }
+{ Year = 2000, Title = Morning Hymn / Alleluia }
+{ Year = 2000, Title = My Favorite Things }
+{ Year = 2000, Title = Overture / Preludium (Dixit Dominus) }
+{ Year = 2000, Title = Processional and Maria }
+{ Year = 2000, Title = Sixteen Going on Seventeen }
+{ Year = 2000, Title = So Long, Farewell }
+{ Year = 2000, Title = The Lonely Goatherd }
+{ Year = 2000, Title = The Sound of Music }
+{ Year = 1995, Title = All I Really Want }
+{ Year = 1995, Title = Forgiven }
+{ Year = 1995, Title = Hand in My Pocket }
+{ Year = 1995, Title = Head Over Feet }
+{ Year = 1995, Title = Ironic }
+{ Year = 1995, Title = Mary Jane }
+{ Year = 1995, Title = Not the Doctor }
+{ Year = 1995, Title = Perfect }
+{ Year = 1995, Title = Right Through You }
+{ Year = 1995, Title = Wake Up / Your House }
+{ Year = 1995, Title = You Learn }
+{ Year = 1995, Title = You Oughta Know }
+{ Year = 1991, Title = Against the Grain }
+{ Year = 1991, Title = Burning Bridges }
+{ Year = 1991, Title = Cold Shoulder }
+{ Year = 1991, Title = In Lonesome Dove }
+{ Year = 1991, Title = Papa Loved Mama }
+{ Year = 1991, Title = Rodeo }
+{ Year = 1991, Title = Shameless }
+{ Year = 1991, Title = The River }
+{ Year = 1991, Title = We Bury the Hatchet }
+{ Year = 1991, Title = What She's Doing Now }
+{ Year = 1986, Title = (You Make Me Feel Like) A Natural Woman }
+{ Year = 1986, Title = Beautiful }
+{ Year = 1986, Title = Home Again }
+{ Year = 1986, Title = I Feel the Earth Move }
+{ Year = 1986, Title = It's Too Late }
+{ Year = 1986, Title = Smackwater Jack }
+{ Year = 1986, Title = So Far Away }
+{ Year = 1986, Title = Tapestry }
+{ Year = 1986, Title = Way Over Yonder }
+{ Year = 1986, Title = Where You Lead }
+{ Year = 1986, Title = Will You Love Me Tomorrow? }
+{ Year = 1986, Title = You've Got a Friend }
+{ Year = 1985, Title = All at Once }
+{ Year = 1985, Title = Greatest Love of All }
+{ Year = 1985, Title = Hold Me }
+{ Year = 1985, Title = How Will I Know }
+{ Year = 1985, Title = Nobody Loves Me Like You Do }
+{ Year = 1985, Title = Saving All My Love for You }
+{ Year = 1985, Title = Someone for Me }
+{ Year = 1985, Title = Take Good Care of My Heart }
+{ Year = 1985, Title = Thinking About You }
+{ Year = 1985, Title = You Give Good Love }
+{ Year = 1984, Title = Bobby Jean }
+{ Year = 1984, Title = Born in the U.S.A. }
+{ Year = 1984, Title = Cover Me }
+{ Year = 1984, Title = Dancing in the Dark }
+{ Year = 1984, Title = Darlington County }
+{ Year = 1984, Title = Downbound Train }
+{ Year = 1984, Title = Glory Days }
+{ Year = 1984, Title = I'm Goin' Down }
+{ Year = 1984, Title = I'm on Fire }
+{ Year = 1984, Title = My Hometown }
+{ Year = 1984, Title = No Surrender }
+{ Year = 1984, Title = Working on the Highway }
+{ Year = 1982, Title = Baby Be Mine }
+{ Year = 1982, Title = Beat It }
+{ Year = 1982, Title = Billie Jean }
+{ Year = 1982, Title = Human Nature }
+{ Year = 1982, Title = P.Y.T. (Pretty Young Thing) }
+{ Year = 1982, Title = The Girl Is Mine }
+{ Year = 1982, Title = The Lady in My Life }
+{ Year = 1982, Title = Thriller }
+{ Year = 1982, Title = Wanna Be Startin' Somethin' }
+{ Year = 1965, Title = At the Student Cafe }
+{ Year = 1965, Title = Komarovsky and Lara's Rendezvous }
+{ Year = 1965, Title = Lara Leaves Yuri }
+{ Year = 1965, Title = Lara's Theme From "Doctor Zhivago" }
+{ Year = 1965, Title = Main Title From "Doctor Zhivago" }
+{ Year = 1965, Title = Overture From "Doctor Zhivago" }
+{ Year = 1965, Title = Prelude / The Sound of Music }
+{ Year = 1965, Title = Revolution }
+{ Year = 1965, Title = Something Good }
+{ Year = 1965, Title = Sventytski's Waltz }
+{ Year = 1965, Title = The Funeral }
+{ Year = 1965, Title = Tonya Arrives at Varykino }
+{ Year = 1965, Title = Yuri Escapes }
+{ Year = 1965, Title = Yuri Writes a Poem for Lara }
+
+--- Step 9 -------------------------------------
+10: Lovesong (2011)
+3: Love Story (2009)
+10: The Way I Loved You (2009)
+5: Papa Loved Mama (1991)
+9: Will You Love Me Tomorrow? (1986)
+1: You Give Good Love (1985)
+4: Saving All My Love for You (1985)
+5: Nobody Loves Me Like You Do (1985)
+9: Greatest Love of All (1985)
+2: LoveGame (2008)
+
+--- Step 10 -------------------------------------
+21
+Fearless
+Ropin' The Wind
+Whitney Houston
+
+21
+Thriller
+Fearless
+Whitney Houston
+
+--- Step 11 -------------------------------------
+Group by haben wir noch nicht gelern, ihr könnt diese Aufgabe auslassen.
+Press a key ...
