@@ -8,14 +8,6 @@ namespace CarRentalCompanyLibrary
 {
     public class Rental
     {
-        private void Load(string path)
-        {
 
-        }
-
-        private void Save(string path)
-        {
-
-        }
     }
 }

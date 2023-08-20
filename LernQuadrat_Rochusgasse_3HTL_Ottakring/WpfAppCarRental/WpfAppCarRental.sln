@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppCarRental", "WpfAppCarRental\WpfAppCarRental.csproj", "{9F01CBCD-7E05-412F-87C8-10525B9AA3AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppCarRental", "WpfAppCarRental\WpfAppCarRental.csproj", "{9F01CBCD-7E05-412F-87C8-10525B9AA3AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRentalCompanyLibrary", "CarRentalCompanyLibrary\CarRentalCompanyLibrary.csproj", "{979114E4-8871-4FEE-B198-2A645787F43E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9F01CBCD-7E05-412F-87C8-10525B9AA3AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F01CBCD-7E05-412F-87C8-10525B9AA3AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F01CBCD-7E05-412F-87C8-10525B9AA3AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979114E4-8871-4FEE-B198-2A645787F43E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979114E4-8871-4FEE-B198-2A645787F43E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979114E4-8871-4FEE-B198-2A645787F43E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979114E4-8871-4FEE-B198-2A645787F43E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
