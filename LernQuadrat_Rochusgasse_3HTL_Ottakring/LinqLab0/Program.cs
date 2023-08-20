@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -93,11 +94,11 @@ namespace LinqLab0Angabe
         private static void RunStep5()
         {
             // 1) Get the single album by 'Bruce Springsteen'
-            var query = albums.Where(album => album.Artist.Equals("Bruce Springsteen")).First();
+            var query1 = albums.Where(album => album.Artist.Equals("Bruce Springsteen")).First();
 
             // 2) Get names of all songs of the album with a rating greater then 3.
             //    Print the names of the songs.
-            var query2 = query.Songs.Where(song => song.Rating > 3).Select(song => song.Title);
+            var query2 = query1.Songs.Where(song => song.Rating > 3).Select(song => song.Title);
             query2.PrintSequence();
         }
 
@@ -112,48 +113,79 @@ namespace LinqLab0Angabe
 
             // 2) Compute the averages of all albums
             var overallAverage = albums.SelectMany(album => album.Songs).Average(song => song.Rating);
-            Console.WriteLine(avg);
             Console.WriteLine(overallAverage);
 
+            // SelectMany: Wie Select nur das die Ausgabe "geflatted wird". Daten werden alle in eine große Liste gesteckt, d.h. keine Liste innerhalb der Liste
         }
 
         private static void RunStep7()
         {
             // 1) Get all the years of the songs on the album with ID = 2.
             //    Make sure there are no duplicate years in the output
+            var query = albums.Where(album => album.Id == 2).SelectMany(album => album.Songs).Select(song => song.Year).Distinct();
+
+            query.PrintSequence();
         }
 
         private static void RunStep8()
         {
             // 1) Get all the songs from all the albums 
+            var query1 = albums.SelectMany(album => album.Songs);
 
             // 2) Order the songs first by year descending and then by title ascending
+            var query2 = query1.OrderByDescending(song => song.Year).ThenBy(song => song.Title);
 
             // 3) Select the titles of the songs and print them
+            query2.Select(song => song.Title).PrintSequence();
 
             // 4) Optional: use an anonymous type to select Year and title (and print them)
+            var query4 = query2.Select(song => new { Year = song.Year, Title = song.Title });
+            query4.PrintSequence();
+
+            /*
+             * anonymous type:
+             * 
+             * Encapsuliert Read-Only Daten in ein Objekt, dass zuvor nicht definiert wurde.
+             * Ein On-the-fly erstelltes Objekt
+             * 
+             */
         }
 
         private static void RunStep9()
         {
             // 1) Get all songs that contain 'Love' in their title
+            var query = albums.SelectMany(album => album.Songs).Where(song => song.Title.Contains("Love"));
+
+            query.PrintSequence();
         }
 
         private static void RunStep10()
         {
             // 1) Get all album titles where any song on the album has a rating of 4.8 or higher
+            var query = albums.Where(album => album.Songs.Any(song => song.Rating >= 4.8)).Select(album => album.Title);
+
+            query.PrintSequence();
 
             // 2) Get all album titles where all songs on the album play for longer than
             //    three minutes
+
+            var query2 = albums.Where(album => album.Songs.All(song => song.Duration.TotalMinutes > 3)).Select(album => album.Title);
+            query2.PrintSequence();
         }
 
         private static void RunStep11()
         {
             // 1) Group all songs by year
             //    Optional: order the grouping by year descending
+            var songsGroupedByYear = albums.SelectMany(album => album.Songs).GroupBy(song => song.Year).OrderByDescending(group => group.Key);
 
             // 2) Iterate over all groups, print the year for each group and 
             //    then the songs for each year ordered by duration ascending
+            foreach (var group in songsGroupedByYear)
+            {
+                Console.WriteLine($"Group: {group.Key}");
+                group.OrderBy(song => song.Duration).PrintSequence();
+            }
         }
     }
 
