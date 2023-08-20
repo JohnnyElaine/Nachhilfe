@@ -16,7 +16,7 @@ namespace Bookstore
             InitializeComponent();
 
             store = new Store();
-            listBoxResult.ItemsSource = store.Items;
+            listBoxResult.ItemsSource = store;
 
             comboBoxCategory.ItemsSource = Enum.GetNames(typeof(Category));
 
@@ -192,7 +192,7 @@ namespace Bookstore
         {
             if (string.IsNullOrEmpty(textBoxSearch.Text))
             {
-                listBoxResult.ItemsSource = store.Items;
+                listBoxResult.ItemsSource = store;
             }
 
         }

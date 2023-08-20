@@ -8,13 +8,10 @@ using System.Xml.Linq;
 
 namespace BookStoreLibrary
 {
-     public class Store
+     public class Store : ObservableCollection<Item>
     {
-        public ObservableCollection<Item> Items { get; }
         public Store() 
         {
-            Items = new ObservableCollection<Item>();
-
             Add(new Book("The Malta Exchange", "Steve Berry", "978-1250225658", Category.Thriller, 10, 12.8m));
             Add(new Newspaper("Der Standard", 20, 2.5m, new DateTime(2020, 10, 20), new List<string>() { "Christina Rebhahn-Roither", "Levin Wotke" }));
             Add(new Newspaper("Der Kurier", 15, 2m, new DateTime(2020, 10, 20), new List<string>() { "Elisabeth Holzer-Ottawa", "Hanno Lorenz" }));
@@ -32,6 +29,7 @@ namespace BookStoreLibrary
             Add(new Newspaper("Die Harry Potter News", 15, 2m, new DateTime(2020, 10, 20), new List<string>() { "J.K. Rowling", "Johanna Roth", "Paul Middelhoff", "Heinrich Wefing" }));
         }
 
+        /*
         public void Add(Item i)
         {
             Items.Add(i);
@@ -41,6 +39,7 @@ namespace BookStoreLibrary
         {
             Items.Remove(i);
         }
+        */
 
         public ObservableCollection<Item> GetByAuthor(string name)
         {
