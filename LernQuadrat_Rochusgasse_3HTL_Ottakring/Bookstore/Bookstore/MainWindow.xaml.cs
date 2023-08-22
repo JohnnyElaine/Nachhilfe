@@ -19,6 +19,7 @@ namespace Bookstore
             listBoxResult.ItemsSource = store;
 
             comboBoxCategory.ItemsSource = Enum.GetNames(typeof(Category));
+            comboBoxCategory.SelectedIndex = 0;
 
         }
 

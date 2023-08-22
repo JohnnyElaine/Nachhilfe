@@ -35,7 +35,7 @@
         </Grid.ColumnDefinitions>
         <DockPanel Grid.Row="0" Grid.Column="0">
             <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,10,0,0">
-                <RadioButton x:Name="radioButtonBook" GroupName="radioButtonGroupItemKindSelector" Content="Book" />
+                <RadioButton x:Name="radioButtonBook" GroupName="radioButtonGroupItemKindSelector" Content="Book" IsChecked="True"/>
                 <RadioButton x:Name="radioButtonAudioBook" GroupName="radioButtonGroupItemKindSelector" Content="Audiobook" />
                 <RadioButton x:Name="radioButtonNewspaper" GroupName="radioButtonGroupItemKindSelector" Content="Newspaper" />
             </StackPanel>
