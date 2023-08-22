@@ -54,7 +54,7 @@ namespace BookStoreLibrary
         {
             ObservableCollection<Item> items = new ObservableCollection<Item>();
 
-            foreach (Item item in this.Items) if (item.Title.Contains(substring)) items.Add(item);
+            foreach (Item item in this.Items) if (item.Title.ToLower().Contains(substring.ToLower())) items.Add(item);
 
             return items;
         }

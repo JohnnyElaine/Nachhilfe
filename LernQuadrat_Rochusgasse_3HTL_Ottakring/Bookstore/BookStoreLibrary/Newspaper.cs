@@ -19,7 +19,13 @@ namespace BookStoreLibrary
 
         public override bool IsFromAuthor(string author)
         {
-            return authors.Contains(author);
+            foreach(string s in authors)
+            {
+                if (s.ToLower().Contains(author.ToLower())) return true;
+            }
+
+            return false;
+            //return authors.Contains(author);
         }
 
         public override string ToString()

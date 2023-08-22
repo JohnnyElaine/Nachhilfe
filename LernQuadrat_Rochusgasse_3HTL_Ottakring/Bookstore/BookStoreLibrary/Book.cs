@@ -23,7 +23,7 @@ namespace BookStoreLibrary
 
         public override bool IsFromAuthor(string author)
         {
-            return this.author.Equals(author);
+            return this.author.ToLower().Contains(author.ToLower());
         }
 
         public override void ReorderItem()

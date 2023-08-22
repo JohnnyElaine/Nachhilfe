@@ -167,6 +167,10 @@ namespace Bookstore
             Item i = (Item)listBoxResult.SelectedItem;
 
             i.Purchase(amount);
+
+            listBoxResult.SelectedItem = i;
+
+            //stBoxResult.Items.Refresh();
         }
 
         private void buttonSell_Click(object sender, RoutedEventArgs e)
