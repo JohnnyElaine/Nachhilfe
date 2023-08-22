@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppCarRental", "WpfAppCarRental\WpfAppCarRental.csproj", "{9F01CBCD-7E05-412F-87C8-10525B9AA3AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRentalCompanyLibrary", "CarRentalCompanyLibrary\CarRentalCompanyLibrary.csproj", "{979114E4-8871-4FEE-B198-2A645787F43E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalCompanyLibrary", "CarRentalCompanyLibrary\CarRentalCompanyLibrary.csproj", "{979114E4-8871-4FEE-B198-2A645787F43E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,13 +1,19 @@
-﻿using System.Windows;
+﻿using CarRentalCompanyLibrary;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace WpfAppCarRental
 {
     public partial class MainWindow : Window
     {
+
+        private CarRentalCompany company;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            company = new CarRentalCompany();
         }
 
         private void buttonRent_Click(object sender, RoutedEventArgs e)

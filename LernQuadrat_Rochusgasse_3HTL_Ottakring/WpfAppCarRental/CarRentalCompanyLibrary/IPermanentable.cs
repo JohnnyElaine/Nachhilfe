@@ -11,9 +11,7 @@ namespace CarRentalCompanyLibrary
         void Load(string path);
 
 
-        void Save(string path)
-        {
-
-        }
+        void Save(string path);
+  
     }
 }
