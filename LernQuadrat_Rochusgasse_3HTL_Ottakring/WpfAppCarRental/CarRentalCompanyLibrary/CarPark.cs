@@ -8,7 +8,7 @@ namespace CarRentalCompanyLibrary
 {
     internal class CarPark : Dictionary<string, Car>, IPermanentable
     {
-        private const char DELIMITER = ':';
+        private const char DELIMITER = ';';
 
         public bool DeleteCar(string licencePlate)
         {

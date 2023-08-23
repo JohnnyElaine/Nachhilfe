@@ -9,6 +9,13 @@ namespace CarRentalCompanyLibrary
         private string brand;
         private string licencePlate;
 
+
+        public string LicencePlate
+        {
+            get { return licencePlate; }
+
+        }
+
         public string CSV
         {
             get { return $"{licencePlate}{DELIMITER}{brand}"; }
@@ -37,7 +44,7 @@ namespace CarRentalCompanyLibrary
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"{licencePlate} - {brand}";
         }
     }
 }

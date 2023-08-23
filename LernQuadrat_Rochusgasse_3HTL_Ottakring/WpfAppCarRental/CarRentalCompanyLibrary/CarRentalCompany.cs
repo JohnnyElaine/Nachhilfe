@@ -17,6 +17,9 @@ namespace CarRentalCompanyLibrary
     public class CarRentalCompany : IDisposable
     {
 
+        private const string CARS_CSV_PATH = "../../../cars.csv";
+        private const string CUSTOMER_CSV_PATH = "../../../customers.csv";
+
         private CarPark cars;
         private CustomerManagement customers;
         private Dictionary<Car, List<Rental>> rentals;
@@ -39,26 +42,40 @@ namespace CarRentalCompanyLibrary
 
         public CarRentalCompany()
         {
+            cars = new CarPark();
+            customers = new CustomerManagement();
+            rentals = new Dictionary<Car, List<Rental>>();
 
+            Init(cars, CARS_CSV_PATH);
+            Init(customers, CUSTOMER_CSV_PATH);
         }
 
         public void AddNewCar(Car c)
         {
-
+            cars[c.LicencePlate] = c;
         }
 
         public void AddNewCustomer(Customer c)
         {
-
+            customers.Add(c);
         }
 
-        public List<Customer> CustomerOfACar(Car car)
+        public List<Rental> CustomerOfACar(Car car)
         {
-            return new List<Customer>();
+            return rentals.ContainsKey(car) ? rentals[car] : new List<Rental>();
         }
 
         public void RentACar(string licencePlate, int customerId, DateTime start, TimeSpan duration)
         {
+            Car c = cars.GetCar(licencePlate);
+            Customer customer = customers.GetCustomer(customerId);
+
+            Rental r = new Rental(c, customer, start, duration);
+
+            if (!rentals.ContainsKey(c)) rentals[c] = new List<Rental>();
+
+            rentals[c].Add(r);
+
 
         }
 
@@ -74,7 +91,8 @@ namespace CarRentalCompanyLibrary
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Final(cars, CARS_CSV_PATH);
+            Final(customers, CUSTOMER_CSV_PATH);
         }
     }
 }

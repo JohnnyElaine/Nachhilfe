@@ -15,12 +15,15 @@ namespace CarRentalCompanyLibrary
 
         public Rental(Car car, Customer customer, DateTime start, TimeSpan duration)
         {
-
+            this.car = car;
+            this.customer = customer;
+            this.start = start;
+            this.duration = duration;
         }
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"{car}: {customer} - {start} - {duration}";
         }
     }
 }

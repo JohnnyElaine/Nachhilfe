@@ -46,7 +46,7 @@ namespace CarRentalCompanyLibrary
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"{id} - {name}";
         }
     }
 }
