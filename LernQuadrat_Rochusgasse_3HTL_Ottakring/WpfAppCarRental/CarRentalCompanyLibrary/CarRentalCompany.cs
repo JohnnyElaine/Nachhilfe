@@ -60,9 +60,11 @@ namespace CarRentalCompanyLibrary
             customers.Add(c);
         }
 
-        public List<Rental> CustomerOfACar(Car car)
+        public List<Customer> CustomerOfACar(Car car)
         {
-            return rentals.ContainsKey(car) ? rentals[car] : new List<Rental>();
+            return rentals.ContainsKey(car) ? rentals[car].Select(rental => rental.Customer).ToList() : new List<Customer>();
+            //return rentals.SelectMany(dict => dict.Value).Select(rental => rental.Customer).ToList();
+            //return rentals.ContainsKey(car) ? rentals[car] : new List<Rental>();
         }
 
         public void RentACar(string licencePlate, int customerId, DateTime start, TimeSpan duration)
@@ -75,8 +77,6 @@ namespace CarRentalCompanyLibrary
             if (!rentals.ContainsKey(c)) rentals[c] = new List<Rental>();
 
             rentals[c].Add(r);
-
-
         }
 
         private void Final(IPermanentable objectToSave, string path)
