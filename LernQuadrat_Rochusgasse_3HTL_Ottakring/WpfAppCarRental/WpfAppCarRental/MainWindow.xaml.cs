@@ -29,7 +29,6 @@ namespace WpfAppCarRental
             company.RentACar(selectedCar.LicencePlate, customer.ID, DateTime.Now, new TimeSpan(2,0,0));
 
             listBoxRentals.ItemsSource = company.Rentals;
-
             listBoxCustomerOfCar.ItemsSource = company.CustomerOfACar(selectedCar);
             listBoxRentals.Items.Refresh();
         }

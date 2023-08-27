@@ -13,6 +13,11 @@ namespace CarRentalCompanyLibrary
         private TimeSpan duration;
         private DateTime start;
 
+        public Customer Customer
+        {
+            get { return customer; }
+        }
+
         public Rental(Car car, Customer customer, DateTime start, TimeSpan duration)
         {
             this.car = car;

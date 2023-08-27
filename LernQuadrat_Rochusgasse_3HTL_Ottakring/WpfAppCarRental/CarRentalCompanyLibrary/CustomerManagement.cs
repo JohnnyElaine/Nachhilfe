@@ -10,8 +10,7 @@ namespace CarRentalCompanyLibrary
     {
         public bool DeleteCustomer(int id)
         {
-            Customer target = this.Where(customer => customer.ID == id).First();
-            return Remove(target);
+            return Remove(GetCustomer(id));
         }
 
         public Customer GetCustomer(int id)
