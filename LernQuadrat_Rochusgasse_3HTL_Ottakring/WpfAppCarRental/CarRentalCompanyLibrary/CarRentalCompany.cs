@@ -24,6 +24,11 @@ namespace CarRentalCompanyLibrary
         private CustomerManagement customers;
         private Dictionary<Car, List<Rental>> rentals;
 
+        public Dictionary<string, Car> Cars2
+        {
+            get { return cars; }
+        }
+
         public List<Car> Cars
         {
             get { return cars.Values.ToList(); }

@@ -30,7 +30,7 @@ Im oberen Beispiel sind die Änderungen wie folgt:
 
 In diesem Beispiel gibt es `7` Messungen, die größer sind als die vorherige Messung.
 
-Finde nun heraus wie wiele Messung `inputList` größer sind als die vorherige Messung.
+Finde nun heraus wie wie viele Messung `inputList` größer sind als die vorherige Messung.
 
 # Aufgabe 3
 
@@ -52,9 +52,9 @@ Betrachten Sie stattdessen die Summen eines gleitenden Fensters mit drei Messung
 
 Vergleichen Sie zunächst das erste und das zweite Fenster mit drei Messungen. Die Messungen im ersten Fenster sind mit A (199, 200, 208) gekennzeichnet; ihre Summe beträgt 199 + 200 + 208 = 607. Das zweite Fenster ist mit B (200, 208, 210) gekennzeichnet; seine Summe beträgt 618. Die Summe der Messungen im zweiten Fenster ist größer als die Summe des ersten Fensters, so dass dieser erste Vergleich zugenommen hat.
 
-Your goal now is to count the number of times the sum of measurements in this sliding window increases from the previous sum. So, compare A with B, then compare B with C, then C with D, and so on. Stop when there aren't enough measurements left to create a new three-measurement sum.
+Ihr Ziel ist es nun, zu zählen, wie oft sich die Summe der Messungen in diesem gleitenden Fenster gegenüber der vorherigen Summe erhöht. Vergleichen Sie also A mit B, dann B mit C, dann C mit D, und so weiter. Hören Sie auf, wenn nicht mehr genug Messungen übrig sind, um eine neue Summe von drei Messungen zu bilden.
 
-In the above example, the sum of each three-measurement window is as follows:
+Im Beispiel oben ist die Summe aller 3er-Gruppen wiefolgt:
 
 - 199  A      
 - 200  A B    
