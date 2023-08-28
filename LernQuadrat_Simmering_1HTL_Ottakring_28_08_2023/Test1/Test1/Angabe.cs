@@ -9,7 +9,7 @@ namespace Test1
     public class Angabe
     {
         const string PATH = "../../../input.txt";
-        public static List<string> generateList()
+        public static List<string> GenerateList()
         {
             List<string> list = new List<string>();
 
